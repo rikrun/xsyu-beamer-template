@@ -9,6 +9,8 @@
 2. clone项目
 ```bash
 git clone https://gitee.com/geethon/xsyu-beamer-template.git
+或者：
+git clone https://github.com/rikrun/xsyu-beamer-template.git
 ```
 3. 使用Xelatex编译文档即可。编译链建议为xelatex-biber-xelatex-xelatex
 
