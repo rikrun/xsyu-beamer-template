@@ -1,0 +1,59 @@
+\usefonttheme{professionalfonts}%好看的数学公式字体
+\batchmode
+\usepackage{graphicx}
+\usepackage{animate}
+\usepackage{hyperref}
+%导入一些用到的宏包
+\usepackage{amsmath,bm,amsfonts,amssymb,enumerate,epsfig,bbm,calc,color,ifthen,capt-of,multimedia,hyperref}
+\usepackage{xeCJK} %导入中文包
+
+\setCJKmainfont{Sarasa Gothic SC} %字体采用更莎黑体
+\usetheme{Berlin} %主题
+\usecolortheme{xsyu} %主题颜色
+\usepackage{tikz,mathpazo}
+\usetikzlibrary{shapes, arrows,calc,3d}
+\usepackage[ruled,linesnumbered]{algorithm2e}
+\usepackage{fancybox}
+\usepackage{xcolor}
+\usepackage{times}
+\usepackage{listings}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{color}
+\usepackage{calc}
+\newcommand{\Console}{Console}
+\lstset{ %
+	backgroundcolor=\color{white},   % choose the background color
+	basicstyle=\footnotesize\rmfamily,     % size of fonts used for the code
+	columns=fullflexible,
+	breaklines=true,                 % automatic line breaking only at whitespace
+	captionpos=b,                    % sets the caption-position to bottom
+	tabsize=4,
+	commentstyle=\color{mygreen},    % comment style
+	escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+	keywordstyle=\color{blue},       % keyword style
+	stringstyle=\color{mymauve}\ttfamily,     % string literal style
+	numbers=left, 
+	%	frame=single,
+	rulesepcolor=\color{red!20!green!20!blue!20},
+	% identifierstyle=\color{red},
+	language=c
+}
+%================日期、图表汉字设置=================%
+\renewcommand{\today}{\footnotesize\number\year 年\number\month 月\number\day 日}
+\renewcommand{\figurename}{图}
+\renewcommand{\tablename}{表}
+%================主要字体设置=================%
+\setsansfont{Droid Sans Mono}%英文字体采用Droid Sans Mono
+\setmainfont{Sarasa Gothic SC}
+%================自定义颜色设置=================%
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{mygray}{gray}{.9}
+\definecolor{mypink}{rgb}{.99,.91,.95}
+\definecolor{mycyan}{cmyk}{.3,0,0,0}
+%================参考文献及脚注设置=================%
+\usepackage[backend=bibtex,sorting=none,style=gb7714-2015,gbalign=gb7714-2015,gbalign=right]{biblatex}
+\addbibresource{ref.bib} %BibTeX数据文件及位置
+\setbeamerfont{footnote}{size=\tiny}
+\setbeamertemplate{bibliography item}[text]
